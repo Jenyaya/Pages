@@ -1,17 +1,17 @@
 module ApplicationHelper
 
   def title
-    base_title = 'Page'
+    base_title = 'Pages Project'
 
     if @title.nil?
        base_title
     else
-      "#{@title} #{base_title}"
+      @title
     end
   end
 
   def logo
-    image_tag("logo.png", :alt => "Sample App", :class => "round")
+    image_tag("logo.png", :alt => "Pages App", :class => "round")
   end
 
 end
