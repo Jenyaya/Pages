@@ -2,7 +2,7 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.1.3'
 gem 'bcrypt-ruby', '3.0.1'
-gem 'win32console'
+
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
@@ -33,7 +33,8 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
-group :development do
+group :development, :test do
+  gem 'win32console'
   gem 'sqlite3'
   gem 'rspec-rails', '2.0.1'
   gem 'annotate'
