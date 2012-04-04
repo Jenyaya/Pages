@@ -5,7 +5,7 @@ render_views
 
 
 before (:each) do
-@base_title = ' Page'
+@base_title = ''
 end
 
 
@@ -17,7 +17,7 @@ end
 
     it "should have title" do
       get 'home'
-      response.should have_selector("title", :content => 'Home' + @base_title)
+      response.should have_selector("title", :content => 'Home')
     end
 
   end

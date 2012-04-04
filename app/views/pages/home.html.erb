@@ -1,2 +1,6 @@
 <h1>Home Page</h1>
-<%= link_to "Sign Up", signup_path, :class =>"signup_button round" %>
+<% if !signed_in? %>
+    <%= link_to "Sign Up", signup_path, :class =>"signup_button round" %>
+<% else %>
+    <h3>You are already logged in as '<%=  current_user.name %>'</h3>
+<% end %>

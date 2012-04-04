@@ -19,8 +19,8 @@ When /^he submits invalid signin information$/ do
 end
 
 Then /^he should see an error message$/ do
-  page.should have_selector('div.flash.error')
-  page.should have_error_message('Invalid')
+  page.should have_selector('div.flash.error', text: 'Invalid')
+ # page.should have_error_message('Invalid')
 end
 
 Given /^the user has an account$/ do

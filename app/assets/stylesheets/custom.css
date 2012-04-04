@@ -128,7 +128,7 @@ td.sidebar {
   background: #ffc;
 }
 
-div.field, div.actions {
+div.field, div.actions, div.edit_user_form {
   margin-bottom: 10px;
 }
 
